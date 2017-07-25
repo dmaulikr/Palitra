@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B3D49CD1F264750007BEC26 /* PalitraStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3D49CC1F264750007BEC26 /* PalitraStyleKit.swift */; };
+		5B506A561F261EBF00159E7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B506A551F261EBF00159E7E /* AppDelegate.swift */; };
+		5B506A581F261EBF00159E7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B506A571F261EBF00159E7E /* ViewController.swift */; };
+		5B506A5B1F261EBF00159E7E /* Palitra.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B506A591F261EBF00159E7E /* Palitra.xcdatamodeld */; };
+		5B506A5D1F261EBF00159E7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B506A5C1F261EBF00159E7E /* Assets.xcassets */; };
+		5B506A6C1F261EC000159E7E /* PalitraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B506A6B1F261EC000159E7E /* PalitraTests.swift */; };
+		5B506A771F261EC000159E7E /* PalitraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B506A761F261EC000159E7E /* PalitraUITests.swift */; };
+		5B506A8D1F26318600159E7E /* PalitraWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B506A8C1F26318600159E7E /* PalitraWindow.swift */; };
+		5B506A8F1F26349500159E7E /* PalitraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B506A8E1F26349500159E7E /* PalitraButton.swift */; };
+		5BCBBC701F27D98A005FA487 /* PalitraSegmentedControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BCBBC6E1F27D98A005FA487 /* PalitraSegmentedControl.xib */; };
+		5BCBBC711F27D98A005FA487 /* PalitraSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCBBC6F1F27D98A005FA487 /* PalitraSegmentedControl.swift */; };
+		5BDBFCDC1F27A17700BCA4DE /* PalitraSegmentedControlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDBFCDB1F27A17700BCA4DE /* PalitraSegmentedControlCell.swift */; };
+		5BEDC7011F266686003C7A18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BEDC7001F2665B9003C7A18 /* Main.storyboard */; };
+		5BEDC7031F2689E3003C7A18 /* PalitraTitlebarControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEDC7021F2689E3003C7A18 /* PalitraTitlebarControls.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B506A681F261EC000159E7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B506A4A1F261EBF00159E7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B506A511F261EBF00159E7E;
+			remoteInfo = Palitra;
+		};
+		5B506A731F261EC000159E7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B506A4A1F261EBF00159E7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B506A511F261EBF00159E7E;
+			remoteInfo = Palitra;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5B3D49CC1F264750007BEC26 /* PalitraStyleKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalitraStyleKit.swift; sourceTree = "<group>"; };
+		5B506A521F261EBF00159E7E /* Palitra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palitra.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B506A551F261EBF00159E7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5B506A571F261EBF00159E7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5B506A5A1F261EBF00159E7E /* Palitra.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Palitra.xcdatamodel; sourceTree = "<group>"; };
+		5B506A5C1F261EBF00159E7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B506A611F261EBF00159E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B506A621F261EBF00159E7E /* Palitra.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Palitra.entitlements; sourceTree = "<group>"; };
+		5B506A671F261EC000159E7E /* PalitraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PalitraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B506A6B1F261EC000159E7E /* PalitraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalitraTests.swift; sourceTree = "<group>"; };
+		5B506A6D1F261EC000159E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B506A721F261EC000159E7E /* PalitraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PalitraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B506A761F261EC000159E7E /* PalitraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalitraUITests.swift; sourceTree = "<group>"; };
+		5B506A781F261EC000159E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B506A8C1F26318600159E7E /* PalitraWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalitraWindow.swift; sourceTree = "<group>"; };
+		5B506A8E1F26349500159E7E /* PalitraButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalitraButton.swift; sourceTree = "<group>"; };
+		5BCBBC6E1F27D98A005FA487 /* PalitraSegmentedControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PalitraSegmentedControl.xib; sourceTree = "<group>"; };
+		5BCBBC6F1F27D98A005FA487 /* PalitraSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalitraSegmentedControl.swift; sourceTree = "<group>"; };
+		5BDBFCDB1F27A17700BCA4DE /* PalitraSegmentedControlCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalitraSegmentedControlCell.swift; sourceTree = "<group>"; };
+		5BEDC7001F2665B9003C7A18 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5BEDC7021F2689E3003C7A18 /* PalitraTitlebarControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalitraTitlebarControls.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B506A4F1F261EBF00159E7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B506A641F261EC000159E7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B506A6F1F261EC000159E7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B506A491F261EBF00159E7E = {
+			isa = PBXGroup;
+			children = (
+				5B506A541F261EBF00159E7E /* Palitra */,
+				5B506A6A1F261EC000159E7E /* PalitraTests */,
+				5B506A751F261EC000159E7E /* PalitraUITests */,
+				5B506A531F261EBF00159E7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B506A531F261EBF00159E7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B506A521F261EBF00159E7E /* Palitra.app */,
+				5B506A671F261EC000159E7E /* PalitraTests.xctest */,
+				5B506A721F261EC000159E7E /* PalitraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B506A541F261EBF00159E7E /* Palitra */ = {
+			isa = PBXGroup;
+			children = (
+				5B506A5C1F261EBF00159E7E /* Assets.xcassets */,
+				5BEDC7001F2665B9003C7A18 /* Main.storyboard */,
+				5BDBFCDD1F27D91200BCA4DE /* PalitraSegmentedControl */,
+				5BEDC7021F2689E3003C7A18 /* PalitraTitlebarControls.swift */,
+				5B506A551F261EBF00159E7E /* AppDelegate.swift */,
+				5B506A571F261EBF00159E7E /* ViewController.swift */,
+				5B506A8C1F26318600159E7E /* PalitraWindow.swift */,
+				5B506A8E1F26349500159E7E /* PalitraButton.swift */,
+				5B3D49CC1F264750007BEC26 /* PalitraStyleKit.swift */,
+				5B506A611F261EBF00159E7E /* Info.plist */,
+				5B506A621F261EBF00159E7E /* Palitra.entitlements */,
+				5B506A591F261EBF00159E7E /* Palitra.xcdatamodeld */,
+			);
+			path = Palitra;
+			sourceTree = "<group>";
+		};
+		5B506A6A1F261EC000159E7E /* PalitraTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B506A6B1F261EC000159E7E /* PalitraTests.swift */,
+				5B506A6D1F261EC000159E7E /* Info.plist */,
+			);
+			path = PalitraTests;
+			sourceTree = "<group>";
+		};
+		5B506A751F261EC000159E7E /* PalitraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5B506A761F261EC000159E7E /* PalitraUITests.swift */,
+				5B506A781F261EC000159E7E /* Info.plist */,
+			);
+			path = PalitraUITests;
+			sourceTree = "<group>";
+		};
+		5BDBFCDD1F27D91200BCA4DE /* PalitraSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				5BCBBC6F1F27D98A005FA487 /* PalitraSegmentedControl.swift */,
+				5BCBBC6E1F27D98A005FA487 /* PalitraSegmentedControl.xib */,
+				5BDBFCDB1F27A17700BCA4DE /* PalitraSegmentedControlCell.swift */,
+			);
+			path = PalitraSegmentedControl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B506A511F261EBF00159E7E /* Palitra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B506A7B1F261EC000159E7E /* Build configuration list for PBXNativeTarget "Palitra" */;
+			buildPhases = (
+				5B506A4E1F261EBF00159E7E /* Sources */,
+				5B506A4F1F261EBF00159E7E /* Frameworks */,
+				5B506A501F261EBF00159E7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Palitra;
+			productName = Palitra;
+			productReference = 5B506A521F261EBF00159E7E /* Palitra.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5B506A661F261EC000159E7E /* PalitraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B506A7E1F261EC000159E7E /* Build configuration list for PBXNativeTarget "PalitraTests" */;
+			buildPhases = (
+				5B506A631F261EC000159E7E /* Sources */,
+				5B506A641F261EC000159E7E /* Frameworks */,
+				5B506A651F261EC000159E7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B506A691F261EC000159E7E /* PBXTargetDependency */,
+			);
+			name = PalitraTests;
+			productName = PalitraTests;
+			productReference = 5B506A671F261EC000159E7E /* PalitraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5B506A711F261EC000159E7E /* PalitraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B506A811F261EC000159E7E /* Build configuration list for PBXNativeTarget "PalitraUITests" */;
+			buildPhases = (
+				5B506A6E1F261EC000159E7E /* Sources */,
+				5B506A6F1F261EC000159E7E /* Frameworks */,
+				5B506A701F261EC000159E7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B506A741F261EC000159E7E /* PBXTargetDependency */,
+			);
+			name = PalitraUITests;
+			productName = PalitraUITests;
+			productReference = 5B506A721F261EC000159E7E /* PalitraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B506A4A1F261EBF00159E7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Martin Velchevski";
+				TargetAttributes = {
+					5B506A511F261EBF00159E7E = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					5B506A661F261EC000159E7E = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = 5B506A511F261EBF00159E7E;
+					};
+					5B506A711F261EC000159E7E = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = 5B506A511F261EBF00159E7E;
+					};
+				};
+			};
+			buildConfigurationList = 5B506A4D1F261EBF00159E7E /* Build configuration list for PBXProject "Palitra" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B506A491F261EBF00159E7E;
+			productRefGroup = 5B506A531F261EBF00159E7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B506A511F261EBF00159E7E /* Palitra */,
+				5B506A661F261EC000159E7E /* PalitraTests */,
+				5B506A711F261EC000159E7E /* PalitraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B506A501F261EBF00159E7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B506A5D1F261EBF00159E7E /* Assets.xcassets in Resources */,
+				5BCBBC701F27D98A005FA487 /* PalitraSegmentedControl.xib in Resources */,
+				5BEDC7011F266686003C7A18 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B506A651F261EC000159E7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B506A701F261EC000159E7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B506A4E1F261EBF00159E7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BEDC7031F2689E3003C7A18 /* PalitraTitlebarControls.swift in Sources */,
+				5B506A5B1F261EBF00159E7E /* Palitra.xcdatamodeld in Sources */,
+				5B506A581F261EBF00159E7E /* ViewController.swift in Sources */,
+				5BCBBC711F27D98A005FA487 /* PalitraSegmentedControl.swift in Sources */,
+				5B3D49CD1F264750007BEC26 /* PalitraStyleKit.swift in Sources */,
+				5B506A561F261EBF00159E7E /* AppDelegate.swift in Sources */,
+				5BDBFCDC1F27A17700BCA4DE /* PalitraSegmentedControlCell.swift in Sources */,
+				5B506A8D1F26318600159E7E /* PalitraWindow.swift in Sources */,
+				5B506A8F1F26349500159E7E /* PalitraButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B506A631F261EC000159E7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B506A6C1F261EC000159E7E /* PalitraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B506A6E1F261EC000159E7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B506A771F261EC000159E7E /* PalitraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B506A691F261EC000159E7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B506A511F261EBF00159E7E /* Palitra */;
+			targetProxy = 5B506A681F261EC000159E7E /* PBXContainerItemProxy */;
+		};
+		5B506A741F261EC000159E7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B506A511F261EBF00159E7E /* Palitra */;
+			targetProxy = 5B506A731F261EC000159E7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5B506A791F261EC000159E7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5B506A7A1F261EC000159E7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		5B506A7C1F261EC000159E7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Palitra/Palitra.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8Y9SGRS3G4;
+				INFOPLIST_FILE = Palitra/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = martincodes.Palitra;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		5B506A7D1F261EC000159E7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Palitra/Palitra.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8Y9SGRS3G4;
+				INFOPLIST_FILE = Palitra/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = martincodes.Palitra;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		5B506A7F1F261EC000159E7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8Y9SGRS3G4;
+				INFOPLIST_FILE = PalitraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = martincodes.PalitraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Palitra.app/Contents/MacOS/Palitra";
+			};
+			name = Debug;
+		};
+		5B506A801F261EC000159E7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8Y9SGRS3G4;
+				INFOPLIST_FILE = PalitraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = martincodes.PalitraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Palitra.app/Contents/MacOS/Palitra";
+			};
+			name = Release;
+		};
+		5B506A821F261EC000159E7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8Y9SGRS3G4;
+				INFOPLIST_FILE = PalitraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = martincodes.PalitraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = Palitra;
+			};
+			name = Debug;
+		};
+		5B506A831F261EC000159E7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8Y9SGRS3G4;
+				INFOPLIST_FILE = PalitraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = martincodes.PalitraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = Palitra;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B506A4D1F261EBF00159E7E /* Build configuration list for PBXProject "Palitra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B506A791F261EC000159E7E /* Debug */,
+				5B506A7A1F261EC000159E7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B506A7B1F261EC000159E7E /* Build configuration list for PBXNativeTarget "Palitra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B506A7C1F261EC000159E7E /* Debug */,
+				5B506A7D1F261EC000159E7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B506A7E1F261EC000159E7E /* Build configuration list for PBXNativeTarget "PalitraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B506A7F1F261EC000159E7E /* Debug */,
+				5B506A801F261EC000159E7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B506A811F261EC000159E7E /* Build configuration list for PBXNativeTarget "PalitraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B506A821F261EC000159E7E /* Debug */,
+				5B506A831F261EC000159E7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5B506A591F261EBF00159E7E /* Palitra.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5B506A5A1F261EBF00159E7E /* Palitra.xcdatamodel */,
+			);
+			currentVersion = 5B506A5A1F261EBF00159E7E /* Palitra.xcdatamodel */;
+			path = Palitra.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5B506A4A1F261EBF00159E7E /* Project object */;
+}
