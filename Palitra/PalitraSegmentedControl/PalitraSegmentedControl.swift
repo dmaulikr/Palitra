@@ -42,10 +42,15 @@ import Cocoa
     
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
+        sharedInit()
     }
     
     required init?(coder decoder: NSCoder) {
         super.init(coder: decoder)
+        sharedInit()
+    }
+    
+    func sharedInit() {
         Bundle.main.loadNibNamed(NSNib.Name.init(rawValue: "PalitraSegmentedControl"), owner: self, topLevelObjects: nil)
         self.view.frame = self.bounds
         self.addSubview(self.view)
@@ -53,7 +58,6 @@ import Cocoa
         stackView.layer?.cornerRadius = 4.0
         stackView.layer?.masksToBounds = true
         setupSegments()
-        
     }
     
     //TODO: Make sure this gets cleaned up

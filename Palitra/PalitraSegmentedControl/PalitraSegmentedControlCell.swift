@@ -8,7 +8,7 @@
 
 import Cocoa
 
-open class PalitraSegmentedControlCell: NSImageView {
+@IBDesignable open class PalitraSegmentedControlCell: NSImageView {
 
     open var segment: Int?
     open var clickHandler: ((_ activeSegment: Int) -> Void)?

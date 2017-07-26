@@ -112,15 +112,15 @@
 		5B506A541F261EBF00159E7E /* Palitra */ = {
 			isa = PBXGroup;
 			children = (
-				5B506A5C1F261EBF00159E7E /* Assets.xcassets */,
+				5B506A551F261EBF00159E7E /* AppDelegate.swift */,
 				5BEDC7001F2665B9003C7A18 /* Main.storyboard */,
 				5BDBFCDD1F27D91200BCA4DE /* PalitraSegmentedControl */,
 				5BEDC7021F2689E3003C7A18 /* PalitraTitlebarControls.swift */,
-				5B506A551F261EBF00159E7E /* AppDelegate.swift */,
 				5B506A571F261EBF00159E7E /* ViewController.swift */,
 				5B506A8C1F26318600159E7E /* PalitraWindow.swift */,
 				5B506A8E1F26349500159E7E /* PalitraButton.swift */,
 				5B3D49CC1F264750007BEC26 /* PalitraStyleKit.swift */,
+				5B506A5C1F261EBF00159E7E /* Assets.xcassets */,
 				5B506A611F261EBF00159E7E /* Info.plist */,
 				5B506A621F261EBF00159E7E /* Palitra.entitlements */,
 				5B506A591F261EBF00159E7E /* Palitra.xcdatamodeld */,

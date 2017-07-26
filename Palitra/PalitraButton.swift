@@ -22,39 +22,43 @@ import Cocoa
         buttonSetup()
     }
     
-    override func mouseDown(with event: NSEvent) {
-        
+    override func awakeFromNib() {
+        buttonSetup()
     }
     
-    override func mouseUp(with event: NSEvent) {
-        
-    }
+//    override func mouseDown(with event: NSEvent) {
+//        super.mouseDown(with: event)
+//    }
+//
+//    override func mouseUp(with event: NSEvent) {
+//        super.mouseUp(with: event)
+//    }
     
     func buttonSetup() {
         self.wantsLayer = true
+        self.isBordered = false
         self.title = ""
+        drawButton()
     }
     
-    override func draw(_ dirtyRect: NSRect) {
-        super.draw(dirtyRect)
-        self.frame = dirtyRect
-        
-        if let id = self.buttonIdentifier {
+    func drawButton() {
+
+        if let id = buttonIdentifier {
             switch id {
             case "newPalette":
-                PalitraStyleKit.drawPalitraNewButton(frame: dirtyRect)
+                self.image = PalitraStyleKit.imageOfPalitraNewButton(imageSize: self.frame.size)
+                self.alternateImage = PalitraStyleKit.imageOfPalitraNewButtonActive(imageSize: self.frame.size)
             case "randomize":
-                PalitraStyleKit.drawPalitraRandomizeButton(frame: dirtyRect)
+                self.image = PalitraStyleKit.imageOfPalitraRandomizeButton(imageSize: self.frame.size)
+                self.alternateImage = PalitraStyleKit.imageOfPalitraRandomizeButtonActive(imageSize: self.frame.size)
             case "sketchSync":
-                PalitraStyleKit.drawPalitraSketchSyncButton(frame: dirtyRect)
+                self.image = PalitraStyleKit.imageOfPalitraSketchSyncButton(imageSize: self.frame.size)
+                self.alternateImage = PalitraStyleKit.imageOfPalitraSketchSyncButtonActive(imageSize: self.frame.size)
             default:
                 Swift.print("Invalid or unset button identifier")
             }
         } else {
-            PalitraStyleKit.drawPalitraButton(frame: dirtyRect)
+            self.image = PalitraStyleKit.imageOfPalitraButton(imageSize: self.frame.size)
         }
-    
-    }
-    
-    
+    } 
 }

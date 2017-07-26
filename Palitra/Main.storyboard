@@ -734,45 +734,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="403" height="46"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ze-Bw-jSh">
+                            <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZlX-NI-l4K">
                                 <rect key="frame" x="0.0" y="11" width="136" height="24"/>
                                 <subviews>
-                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="a60-36-xSA" customClass="PalitraButton" customModule="Palitra" customModuleProvider="target">
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OZY-gd-1ot" customClass="PalitraButton" customModule="Palitra" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="24"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="24" id="fYP-OY-grX"/>
-                                            <constraint firstAttribute="width" constant="40" id="rqP-I6-6Mn"/>
+                                            <constraint firstAttribute="height" constant="24" id="1HK-Br-dx2"/>
+                                            <constraint firstAttribute="width" constant="40" id="4Gv-7h-jFZ"/>
                                         </constraints>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" inset="2" id="ToA-M2-J3l">
+                                            <behavior key="behavior" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="buttonIdentifier" value="newPalette"/>
                                         </userDefinedRuntimeAttributes>
-                                    </customView>
-                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="g9F-fl-EqP" customClass="PalitraButton" customModule="Palitra" customModuleProvider="target">
+                                        <connections>
+                                            <action selector="newPaletteButtonClicked:" target="QC0-7M-wm9" id="9V6-Ar-zUa"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ggn-uU-wEH" customClass="PalitraButton" customModule="Palitra" customModuleProvider="target">
                                         <rect key="frame" x="48" y="0.0" width="40" height="24"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="BYF-gA-IZa"/>
-                                            <constraint firstAttribute="height" constant="24" id="G6V-Wn-pft"/>
+                                            <constraint firstAttribute="height" constant="24" id="PeG-c4-gga"/>
+                                            <constraint firstAttribute="width" constant="40" id="uCv-Dw-Ojq"/>
                                         </constraints>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" inset="2" id="nNd-P4-K36">
+                                            <behavior key="behavior" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="buttonIdentifier" value="randomize"/>
                                         </userDefinedRuntimeAttributes>
-                                    </customView>
-                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="CIK-7Z-x9U" customClass="PalitraButton" customModule="Palitra" customModuleProvider="target">
+                                        <connections>
+                                            <action selector="randomizeButtonClicked:" target="QC0-7M-wm9" id="lkj-a0-RdL"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Dzp-Yf-bYV" customClass="PalitraButton" customModule="Palitra" customModuleProvider="target">
                                         <rect key="frame" x="96" y="0.0" width="40" height="24"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="GXF-zP-rZi"/>
-                                            <constraint firstAttribute="height" constant="24" id="Gg6-u1-042"/>
+                                            <constraint firstAttribute="height" constant="24" id="3PG-2w-IkH"/>
+                                            <constraint firstAttribute="width" constant="40" id="nDr-qg-xv3"/>
                                         </constraints>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" inset="2" id="9cN-h0-ahS">
+                                            <behavior key="behavior" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="buttonIdentifier" value="sketchSync"/>
                                         </userDefinedRuntimeAttributes>
-                                    </customView>
+                                        <connections>
+                                            <action selector="sketchSyncButtonClicked:" target="QC0-7M-wm9" id="op1-ze-EMa"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="a60-36-xSA" firstAttribute="centerY" secondItem="1ze-Bw-jSh" secondAttribute="centerY" id="0bS-vV-oI0"/>
-                                    <constraint firstItem="CIK-7Z-x9U" firstAttribute="centerY" secondItem="1ze-Bw-jSh" secondAttribute="centerY" id="2tg-vl-pQo"/>
-                                    <constraint firstItem="g9F-fl-EqP" firstAttribute="centerY" secondItem="1ze-Bw-jSh" secondAttribute="centerY" id="bFT-aX-qfb"/>
-                                </constraints>
                                 <visibilityPriorities>
                                     <integer value="1000"/>
                                     <integer value="1000"/>
@@ -785,24 +801,24 @@
                                 </customSpacing>
                             </stackView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="ZRw-dV-XtG" customClass="PalitraSegmentedControl" customModule="Palitra" customModuleProvider="target">
-                                <rect key="frame" x="200" y="11" width="120" height="24"/>
+                                <rect key="frame" x="229" y="11" width="120" height="24"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="TnO-xi-QuG"/>
-                                    <constraint firstAttribute="width" constant="120" id="la8-XD-y5O"/>
+                                    <constraint firstAttribute="height" constant="24" id="By1-2v-2tH"/>
+                                    <constraint firstAttribute="width" constant="120" id="TLu-KI-ROz"/>
                                 </constraints>
                             </customView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="ZRw-dV-XtG" firstAttribute="centerY" secondItem="IJe-tr-pMz" secondAttribute="centerY" id="5C3-IK-Xht"/>
-                            <constraint firstItem="1ze-Bw-jSh" firstAttribute="centerY" secondItem="IJe-tr-pMz" secondAttribute="centerY" id="NLZ-Q3-bDb"/>
-                            <constraint firstItem="ZRw-dV-XtG" firstAttribute="leading" secondItem="1ze-Bw-jSh" secondAttribute="trailing" constant="64" id="Zru-8q-VCk"/>
-                            <constraint firstItem="1ze-Bw-jSh" firstAttribute="leading" secondItem="IJe-tr-pMz" secondAttribute="leading" id="icb-TM-n5S"/>
+                            <constraint firstItem="ZlX-NI-l4K" firstAttribute="leading" secondItem="IJe-tr-pMz" secondAttribute="leading" id="DhK-hy-My1"/>
+                            <constraint firstItem="ZRw-dV-XtG" firstAttribute="leading" secondItem="ZlX-NI-l4K" secondAttribute="trailing" constant="93" id="F70-Mg-9u0"/>
+                            <constraint firstItem="ZRw-dV-XtG" firstAttribute="centerY" secondItem="ZlX-NI-l4K" secondAttribute="centerY" id="fXp-tk-TlE"/>
+                            <constraint firstItem="ZlX-NI-l4K" firstAttribute="centerY" secondItem="IJe-tr-pMz" secondAttribute="centerY" id="lXF-lq-FTp"/>
                         </constraints>
                     </view>
                 </viewController>
                 <customObject id="skY-l6-d47" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="712" y="787"/>
+            <point key="canvasLocation" x="711.5" y="787"/>
         </scene>
     </scenes>
 </document>
