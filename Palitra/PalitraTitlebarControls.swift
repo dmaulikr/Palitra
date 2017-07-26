@@ -23,7 +23,6 @@ class PalitraTitlebarControls: NSTitlebarAccessoryViewController {
         Swift.print("sketchSync")
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

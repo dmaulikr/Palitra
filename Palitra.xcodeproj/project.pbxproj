@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B2F25411F28F2F400EAC09C /* PickerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2F253D1F28F2F300EAC09C /* PickerImage.swift */; };
+		5B2F25421F28F2F400EAC09C /* ColorPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2F253E1F28F2F300EAC09C /* ColorPickerController.swift */; };
+		5B2F25431F28F2F400EAC09C /* HuePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2F253F1F28F2F400EAC09C /* HuePicker.swift */; };
+		5B2F25441F28F2F400EAC09C /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2F25401F28F2F400EAC09C /* ColorPicker.swift */; };
+		5B2F25471F28F50300EAC09C /* NewPaletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2F25461F28F50300EAC09C /* NewPaletteViewController.swift */; };
+		5B2F25491F29063400EAC09C /* PalitraSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2F25481F29063400EAC09C /* PalitraSectionHeader.swift */; };
+		5B2F254B1F293F4600EAC09C /* DynamicColorMacOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2F254A1F293F4500EAC09C /* DynamicColorMacOS.framework */; };
+		5B2F254C1F293F4600EAC09C /* DynamicColorMacOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2F254A1F293F4500EAC09C /* DynamicColorMacOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B2F25501F293FAB00EAC09C /* DynamicColorMacOS.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5B2F254F1F293FAB00EAC09C /* DynamicColorMacOS.framework.dSYM */; };
 		5B3D49CD1F264750007BEC26 /* PalitraStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3D49CC1F264750007BEC26 /* PalitraStyleKit.swift */; };
 		5B506A561F261EBF00159E7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B506A551F261EBF00159E7E /* AppDelegate.swift */; };
 		5B506A581F261EBF00159E7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B506A571F261EBF00159E7E /* ViewController.swift */; };
@@ -40,7 +49,39 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5B2F254D1F293F4600EAC09C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5B2F254C1F293F4600EAC09C /* DynamicColorMacOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B2F254E1F293F7900EAC09C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				5B2F25501F293FAB00EAC09C /* DynamicColorMacOS.framework.dSYM in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5B2F253D1F28F2F300EAC09C /* PickerImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerImage.swift; sourceTree = "<group>"; };
+		5B2F253E1F28F2F300EAC09C /* ColorPickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerController.swift; sourceTree = "<group>"; };
+		5B2F253F1F28F2F400EAC09C /* HuePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HuePicker.swift; sourceTree = "<group>"; };
+		5B2F25401F28F2F400EAC09C /* ColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
+		5B2F25461F28F50300EAC09C /* NewPaletteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPaletteViewController.swift; sourceTree = "<group>"; };
+		5B2F25481F29063400EAC09C /* PalitraSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalitraSectionHeader.swift; sourceTree = "<group>"; };
+		5B2F254A1F293F4500EAC09C /* DynamicColorMacOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DynamicColorMacOS.framework; path = Carthage/Build/Mac/DynamicColorMacOS.framework; sourceTree = "<group>"; };
+		5B2F254F1F293FAB00EAC09C /* DynamicColorMacOS.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = DynamicColorMacOS.framework.dSYM; path = Carthage/Build/Mac/DynamicColorMacOS.framework.dSYM; sourceTree = "<group>"; };
 		5B3D49CC1F264750007BEC26 /* PalitraStyleKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalitraStyleKit.swift; sourceTree = "<group>"; };
 		5B506A521F261EBF00159E7E /* Palitra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palitra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B506A551F261EBF00159E7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B2F254B1F293F4600EAC09C /* DynamicColorMacOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,9 +131,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B2F25451F28F2FE00EAC09C /* Color Picker */ = {
+			isa = PBXGroup;
+			children = (
+				5B2F253E1F28F2F300EAC09C /* ColorPickerController.swift */,
+				5B2F25401F28F2F400EAC09C /* ColorPicker.swift */,
+				5B2F253F1F28F2F400EAC09C /* HuePicker.swift */,
+				5B2F253D1F28F2F300EAC09C /* PickerImage.swift */,
+			);
+			path = "Color Picker";
+			sourceTree = "<group>";
+		};
 		5B506A491F261EBF00159E7E = {
 			isa = PBXGroup;
 			children = (
+				5B2F254F1F293FAB00EAC09C /* DynamicColorMacOS.framework.dSYM */,
+				5B2F254A1F293F4500EAC09C /* DynamicColorMacOS.framework */,
 				5B506A541F261EBF00159E7E /* Palitra */,
 				5B506A6A1F261EC000159E7E /* PalitraTests */,
 				5B506A751F261EC000159E7E /* PalitraUITests */,
@@ -112,11 +167,13 @@
 		5B506A541F261EBF00159E7E /* Palitra */ = {
 			isa = PBXGroup;
 			children = (
-				5B506A551F261EBF00159E7E /* AppDelegate.swift */,
 				5BEDC7001F2665B9003C7A18 /* Main.storyboard */,
-				5BDBFCDD1F27D91200BCA4DE /* PalitraSegmentedControl */,
-				5BEDC7021F2689E3003C7A18 /* PalitraTitlebarControls.swift */,
+				5B506A551F261EBF00159E7E /* AppDelegate.swift */,
 				5B506A571F261EBF00159E7E /* ViewController.swift */,
+				5B2F25451F28F2FE00EAC09C /* Color Picker */,
+				5BDBFCDD1F27D91200BCA4DE /* PalitraSegmentedControl */,
+				5B2F25461F28F50300EAC09C /* NewPaletteViewController.swift */,
+				5BEDC7021F2689E3003C7A18 /* PalitraTitlebarControls.swift */,
 				5B506A8C1F26318600159E7E /* PalitraWindow.swift */,
 				5B506A8E1F26349500159E7E /* PalitraButton.swift */,
 				5B3D49CC1F264750007BEC26 /* PalitraStyleKit.swift */,
@@ -124,6 +181,7 @@
 				5B506A611F261EBF00159E7E /* Info.plist */,
 				5B506A621F261EBF00159E7E /* Palitra.entitlements */,
 				5B506A591F261EBF00159E7E /* Palitra.xcdatamodeld */,
+				5B2F25481F29063400EAC09C /* PalitraSectionHeader.swift */,
 			);
 			path = Palitra;
 			sourceTree = "<group>";
@@ -166,6 +224,8 @@
 				5B506A4E1F261EBF00159E7E /* Sources */,
 				5B506A4F1F261EBF00159E7E /* Frameworks */,
 				5B506A501F261EBF00159E7E /* Resources */,
+				5B2F254D1F293F4600EAC09C /* Embed Frameworks */,
+				5B2F254E1F293F7900EAC09C /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -288,12 +348,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BEDC7031F2689E3003C7A18 /* PalitraTitlebarControls.swift in Sources */,
+				5B2F25471F28F50300EAC09C /* NewPaletteViewController.swift in Sources */,
+				5B2F25441F28F2F400EAC09C /* ColorPicker.swift in Sources */,
 				5B506A5B1F261EBF00159E7E /* Palitra.xcdatamodeld in Sources */,
 				5B506A581F261EBF00159E7E /* ViewController.swift in Sources */,
 				5BCBBC711F27D98A005FA487 /* PalitraSegmentedControl.swift in Sources */,
+				5B2F25421F28F2F400EAC09C /* ColorPickerController.swift in Sources */,
 				5B3D49CD1F264750007BEC26 /* PalitraStyleKit.swift in Sources */,
+				5B2F25431F28F2F400EAC09C /* HuePicker.swift in Sources */,
 				5B506A561F261EBF00159E7E /* AppDelegate.swift in Sources */,
 				5BDBFCDC1F27A17700BCA4DE /* PalitraSegmentedControlCell.swift in Sources */,
+				5B2F25411F28F2F400EAC09C /* PickerImage.swift in Sources */,
+				5B2F25491F29063400EAC09C /* PalitraSectionHeader.swift in Sources */,
 				5B506A8D1F26318600159E7E /* PalitraWindow.swift in Sources */,
 				5B506A8F1F26349500159E7E /* PalitraButton.swift in Sources */,
 			);
@@ -444,6 +510,10 @@
 				CODE_SIGN_ENTITLEMENTS = Palitra/Palitra.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8Y9SGRS3G4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Palitra/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = martincodes.Palitra;
@@ -459,6 +529,10 @@
 				CODE_SIGN_ENTITLEMENTS = Palitra/Palitra.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8Y9SGRS3G4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Palitra/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = martincodes.Palitra;

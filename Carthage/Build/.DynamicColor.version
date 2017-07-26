@@ -1,0 +1,9 @@
+{
+  "commitish" : "3.3",
+  "Mac" : [
+    {
+      "hash" : "6889cbc51bff8e0cc5b6fc2ccce03b9b1a5be76147030efcaa766897bd3afb19",
+      "name" : "DynamicColorMacOS"
+    }
+  ]
+}

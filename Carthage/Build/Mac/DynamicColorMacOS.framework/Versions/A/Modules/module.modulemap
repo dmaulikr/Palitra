@@ -1,0 +1,11 @@
+framework module DynamicColorMacOS {
+  umbrella header "DynamicColorMacOS.h"
+
+  export *
+  module * { export * }
+}
+
+module DynamicColorMacOS.Swift {
+    header "DynamicColorMacOS-Swift.h"
+    requires objc
+}

@@ -37,7 +37,7 @@ import Cocoa
     func buttonSetup() {
         self.wantsLayer = true
         self.isBordered = false
-        self.title = ""
+//        self.title = ""
         drawButton()
     }
     

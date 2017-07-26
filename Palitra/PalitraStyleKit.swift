@@ -18,11 +18,15 @@ public class PalitraStyleKit : NSObject {
     //// Cache
 
     private struct Cache {
+        static let paleWhite: NSColor = NSColor(red: 0.98, green: 0.98, blue: 0.98, alpha: 1)
+        static let lightGrey: NSColor = NSColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)
         static let dark: NSColor = NSColor(red: 0, green: 0, blue: 0, alpha: 1)
     }
 
     //// Colors
 
+    @objc dynamic public class var paleWhite: NSColor { return Cache.paleWhite }
+    @objc dynamic public class var lightGrey: NSColor { return Cache.lightGrey }
     @objc dynamic public class var dark: NSColor { return Cache.dark }
 
     //// Drawing Methods
@@ -1152,6 +1156,212 @@ public class PalitraStyleKit : NSObject {
         bezierPath.fill()
     }
 
+    @objc dynamic public class func drawSectionViewWithTopSeparator(frame: NSRect = NSRect(x: 0, y: 0, width: 128, height: 84)) {
+        //// General Declarations
+        let context = NSGraphicsContext.current!.cgContext
+        // This non-generic function dramatically improves compilation times of complex expressions.
+        func fastFloor(_ x: CGFloat) -> CGFloat { return floor(x) }
+
+
+        //// Shadow Declarations
+        let topSeparatorShadow = NSShadow()
+        topSeparatorShadow.shadowColor = PalitraStyleKit.lightGrey
+        topSeparatorShadow.shadowOffset = NSSize(width: 0, height: -1)
+        topSeparatorShadow.shadowBlurRadius = 0
+
+        //// Rectangle Drawing
+        let rectanglePath = NSBezierPath(rect: NSRect(x: frame.minX + fastFloor(frame.width * -0.00000 - 0.5) + 1, y: frame.minY + fastFloor(frame.height * 0.00000 + 0.5), width: fastFloor(frame.width * 1.00000 - 0.5) - fastFloor(frame.width * -0.00000 - 0.5), height: fastFloor(frame.height * 1.00000 + 0.5) - fastFloor(frame.height * 0.00000 + 0.5)))
+        PalitraStyleKit.paleWhite.setFill()
+        rectanglePath.fill()
+
+        ////// Rectangle Inner Shadow
+        NSGraphicsContext.saveGraphicsState()
+        rectanglePath.bounds.clip()
+        context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
+
+        context.setAlpha(topSeparatorShadow.shadowColor!.alphaComponent)
+        context.beginTransparencyLayer(auxiliaryInfo: nil)
+        let rectangleOpaqueShadow = NSShadow()
+        rectangleOpaqueShadow.shadowColor = topSeparatorShadow.shadowColor!.withAlphaComponent(1)
+        rectangleOpaqueShadow.shadowOffset = topSeparatorShadow.shadowOffset
+        rectangleOpaqueShadow.shadowBlurRadius = topSeparatorShadow.shadowBlurRadius
+        rectangleOpaqueShadow.set()
+
+        context.setBlendMode(.sourceOut)
+        context.beginTransparencyLayer(auxiliaryInfo: nil)
+
+        rectangleOpaqueShadow.shadowColor!.setFill()
+        rectanglePath.fill()
+
+        context.endTransparencyLayer()
+        context.endTransparencyLayer()
+        NSGraphicsContext.restoreGraphicsState()
+    }
+
+    @objc dynamic public class func drawSectionViewWithBottomSeparator(frame: NSRect = NSRect(x: 0, y: 0, width: 128, height: 84)) {
+        //// General Declarations
+        let context = NSGraphicsContext.current!.cgContext
+        // This non-generic function dramatically improves compilation times of complex expressions.
+        func fastFloor(_ x: CGFloat) -> CGFloat { return floor(x) }
+
+
+        //// Shadow Declarations
+        let botSeparatorShadow = NSShadow()
+        botSeparatorShadow.shadowColor = PalitraStyleKit.lightGrey
+        botSeparatorShadow.shadowOffset = NSSize(width: 0, height: 1)
+        botSeparatorShadow.shadowBlurRadius = 0
+
+        //// Rectangle Drawing
+        let rectanglePath = NSBezierPath(rect: NSRect(x: frame.minX + fastFloor(frame.width * 0.00000 + 0.5), y: frame.minY + fastFloor(frame.height * 0.00000 + 0.5), width: fastFloor(frame.width * 1.00000 + 0.5) - fastFloor(frame.width * 0.00000 + 0.5), height: fastFloor(frame.height * 1.00000 + 0.5) - fastFloor(frame.height * 0.00000 + 0.5)))
+        PalitraStyleKit.paleWhite.setFill()
+        rectanglePath.fill()
+
+        ////// Rectangle Inner Shadow
+        NSGraphicsContext.saveGraphicsState()
+        rectanglePath.bounds.clip()
+        context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
+
+        context.setAlpha(botSeparatorShadow.shadowColor!.alphaComponent)
+        context.beginTransparencyLayer(auxiliaryInfo: nil)
+        let rectangleOpaqueShadow = NSShadow()
+        rectangleOpaqueShadow.shadowColor = botSeparatorShadow.shadowColor!.withAlphaComponent(1)
+        rectangleOpaqueShadow.shadowOffset = botSeparatorShadow.shadowOffset
+        rectangleOpaqueShadow.shadowBlurRadius = botSeparatorShadow.shadowBlurRadius
+        rectangleOpaqueShadow.set()
+
+        context.setBlendMode(.sourceOut)
+        context.beginTransparencyLayer(auxiliaryInfo: nil)
+
+        rectangleOpaqueShadow.shadowColor!.setFill()
+        rectanglePath.fill()
+
+        context.endTransparencyLayer()
+        context.endTransparencyLayer()
+        NSGraphicsContext.restoreGraphicsState()
+    }
+
+    @objc dynamic public class func drawColorPickerCrosshair(frame targetFrame: NSRect = NSRect(x: 0, y: 0, width: 15, height: 15), resizing: ResizingBehavior = .aspectFit, crossHairPosition: NSPoint = NSPoint(x: 1, y: 1)) {
+        //// General Declarations
+        let context = NSGraphicsContext.current!.cgContext
+        
+        //// Resize to Target Frame
+        NSGraphicsContext.saveGraphicsState()
+        let resizedFrame: NSRect = resizing.apply(rect: NSRect(x: 0, y: 0, width: 15, height: 15), target: targetFrame)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
+        context.scaleBy(x: resizedFrame.width / 15, y: resizedFrame.height / 15)
+
+
+        //// Group
+        NSGraphicsContext.saveGraphicsState()
+        context.translateBy(x: crossHairPosition.x, y: crossHairPosition.y)
+
+
+
+        //// Oval Drawing
+        let ovalPath = NSBezierPath(ovalIn: NSRect(x: 0, y: 0, width: 13, height: 13))
+        PalitraStyleKit.paleWhite.setStroke()
+        ovalPath.lineWidth = 1
+        ovalPath.stroke()
+
+
+        //// Oval 2 Drawing
+        let oval2Path = NSBezierPath(ovalIn: NSRect(x: 1, y: 1, width: 11, height: 11))
+        PalitraStyleKit.dark.setStroke()
+        oval2Path.lineWidth = 1
+        oval2Path.stroke()
+
+
+        //// Rectangle Drawing
+        let rectanglePath = NSBezierPath(rect: NSRect(x: 6, y: 8, width: 1, height: 3))
+        PalitraStyleKit.paleWhite.setFill()
+        rectanglePath.fill()
+
+
+        //// Rectangle 2 Drawing
+        let rectangle2Path = NSBezierPath(rect: NSRect(x: 6, y: 2, width: 1, height: 3))
+        PalitraStyleKit.paleWhite.setFill()
+        rectangle2Path.fill()
+
+
+        //// Rectangle 3 Drawing
+        NSGraphicsContext.saveGraphicsState()
+        context.translateBy(x: 3.5, y: 6.5)
+        context.rotate(by: 90 * CGFloat.pi/180)
+
+        let rectangle3Path = NSBezierPath(rect: NSRect(x: -0.5, y: -1.5, width: 1, height: 3))
+        PalitraStyleKit.paleWhite.setFill()
+        rectangle3Path.fill()
+
+        NSGraphicsContext.restoreGraphicsState()
+
+
+        //// Rectangle 4 Drawing
+        NSGraphicsContext.saveGraphicsState()
+        context.translateBy(x: 9.5, y: 6.5)
+        context.rotate(by: 90 * CGFloat.pi/180)
+
+        let rectangle4Path = NSBezierPath(rect: NSRect(x: -0.5, y: -1.5, width: 1, height: 3))
+        PalitraStyleKit.paleWhite.setFill()
+        rectangle4Path.fill()
+
+        NSGraphicsContext.restoreGraphicsState()
+
+
+
+        NSGraphicsContext.restoreGraphicsState()
+        
+        NSGraphicsContext.restoreGraphicsState()
+
+    }
+
+    @objc dynamic public class func drawHueSelector(frame targetFrame: NSRect = NSRect(x: 0, y: 0, width: 14, height: 32), resizing: ResizingBehavior = .aspectFit) {
+        //// General Declarations
+        let context = NSGraphicsContext.current!.cgContext
+        
+        //// Resize to Target Frame
+        NSGraphicsContext.saveGraphicsState()
+        let resizedFrame: NSRect = resizing.apply(rect: NSRect(x: 0, y: 0, width: 14, height: 32), target: targetFrame)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
+        context.scaleBy(x: resizedFrame.width / 14, y: resizedFrame.height / 32)
+        let resizedShadowScale: CGFloat = min(resizedFrame.width / 14, resizedFrame.height / 32)
+
+
+        //// Color Declarations
+        let fillColor2 = NSColor(red: 1, green: 1, blue: 1, alpha: 1)
+
+        //// Shadow Declarations
+        let botShadow2px = NSShadow()
+        botShadow2px.shadowColor = NSColor.black.withAlphaComponent(0.19)
+        botShadow2px.shadowOffset = NSSize(width: 0, height: -2)
+        botShadow2px.shadowBlurRadius = 2
+        let topShadow2px = NSShadow()
+        topShadow2px.shadowColor = NSColor.black.withAlphaComponent(0.2)
+        topShadow2px.shadowOffset = NSSize(width: 0, height: 2)
+        topShadow2px.shadowBlurRadius = 2
+
+        //// Group 2
+        //// shadowShape Drawing
+        let shadowShapePath = NSBezierPath(roundedRect: NSRect(x: 3, y: 4, width: 8, height: 24), xRadius: 4, yRadius: 4)
+        NSGraphicsContext.saveGraphicsState()
+        context.setShadow(offset: NSSize(width: topShadow2px.shadowOffset.width * resizedShadowScale, height: topShadow2px.shadowOffset.height * resizedShadowScale), blur: topShadow2px.shadowBlurRadius * resizedShadowScale, color: topShadow2px.shadowColor!.cgColor)
+        fillColor2.setFill()
+        shadowShapePath.fill()
+        NSGraphicsContext.restoreGraphicsState()
+
+
+
+        //// masterShape Drawing
+        let masterShapePath = NSBezierPath(roundedRect: NSRect(x: 3, y: 4, width: 8, height: 24), xRadius: 4, yRadius: 4)
+        NSGraphicsContext.saveGraphicsState()
+        context.setShadow(offset: NSSize(width: botShadow2px.shadowOffset.width * resizedShadowScale, height: botShadow2px.shadowOffset.height * resizedShadowScale), blur: botShadow2px.shadowBlurRadius * resizedShadowScale, color: botShadow2px.shadowColor!.cgColor)
+        fillColor2.setFill()
+        masterShapePath.fill()
+        NSGraphicsContext.restoreGraphicsState()
+        
+        NSGraphicsContext.restoreGraphicsState()
+
+    }
+
     //// Generated Images
 
     @objc dynamic public class func imageOfPalitraNewButton(imageSize: NSSize = NSSize(width: 24, height: 24)) -> NSImage {
@@ -1282,4 +1492,45 @@ public class PalitraStyleKit : NSObject {
         }
     }
 
+
+
+
+    @objc(PalitraStyleKitResizingBehavior)
+    public enum ResizingBehavior: Int {
+        case aspectFit /// The content is proportionally resized to fit into the target rectangle.
+        case aspectFill /// The content is proportionally resized to completely fill the target rectangle.
+        case stretch /// The content is stretched to match the entire target rectangle.
+        case center /// The content is centered in the target rectangle, but it is NOT resized.
+
+        public func apply(rect: NSRect, target: NSRect) -> NSRect {
+            if rect == target || target == NSRect.zero {
+                return rect
+            }
+
+            var scales = NSSize.zero
+            scales.width = abs(target.width / rect.width)
+            scales.height = abs(target.height / rect.height)
+
+            switch self {
+                case .aspectFit:
+                    scales.width = min(scales.width, scales.height)
+                    scales.height = scales.width
+                case .aspectFill:
+                    scales.width = max(scales.width, scales.height)
+                    scales.height = scales.width
+                case .stretch:
+                    break
+                case .center:
+                    scales.width = 1
+                    scales.height = 1
+            }
+
+            var result = rect.standardized
+            result.size.width *= scales.width
+            result.size.height *= scales.height
+            result.origin.x = target.minX + (target.width - result.width) / 2
+            result.origin.y = target.minY + (target.height - result.height) / 2
+            return result
+        }
+    }
 }
