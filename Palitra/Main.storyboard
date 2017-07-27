@@ -910,7 +910,7 @@ Gw
                                 </constraints>
                             </customView>
                             <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4qI-3B-EPq">
-                                <rect key="frame" x="16" y="216" width="150" height="56"/>
+                                <rect key="frame" x="16" y="216" width="168" height="56"/>
                                 <subviews>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="4Zr-q0-jae">
                                         <rect key="frame" x="0.0" y="0.0" width="24" height="56"/>
@@ -920,16 +920,16 @@ Gw
                                         </constraints>
                                     </customView>
                                     <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NvE-y8-F2D">
-                                        <rect key="frame" x="32" y="0.0" width="110" height="56"/>
+                                        <rect key="frame" x="32" y="0.0" width="128" height="56"/>
                                         <subviews>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8Dx-Hd-6TN">
-                                                <rect key="frame" x="-2" y="39" width="76" height="17"/>
+                                                <rect key="frame" x="-2" y="39" width="132" height="17"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="72" id="XK5-DG-VAl"/>
+                                                    <constraint firstAttribute="width" constant="128" id="XK5-DG-VAl"/>
                                                     <constraint firstAttribute="height" constant="17" id="dSs-J8-XVY"/>
                                                 </constraints>
                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Color Name" id="yqb-yY-1Oj">
-                                                    <font key="font" metaFont="system"/>
+                                                    <font key="font" metaFont="systemLight" size="13"/>
                                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
@@ -940,7 +940,7 @@ Gw
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aDk-XV-dz6">
                                                         <rect key="frame" x="-2" y="7" width="30" height="17"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="HEX" id="K3u-gi-AzI">
-                                                            <font key="font" metaFont="system"/>
+                                                            <font key="font" metaFont="systemLight" size="13"/>
                                                             <color key="textColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>

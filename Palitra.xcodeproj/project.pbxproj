@@ -16,6 +16,8 @@
 		5B2F254B1F293F4600EAC09C /* DynamicColorMacOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2F254A1F293F4500EAC09C /* DynamicColorMacOS.framework */; };
 		5B2F254C1F293F4600EAC09C /* DynamicColorMacOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2F254A1F293F4500EAC09C /* DynamicColorMacOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B2F25501F293FAB00EAC09C /* DynamicColorMacOS.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5B2F254F1F293FAB00EAC09C /* DynamicColorMacOS.framework.dSYM */; };
+		5B2F25521F294EC300EAC09C /* ColorNamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2F25511F294EC300EAC09C /* ColorNamer.swift */; };
+		5B2F25541F294FDD00EAC09C /* ColorNamer.js in Resources */ = {isa = PBXBuildFile; fileRef = 5B2F25531F294FDD00EAC09C /* ColorNamer.js */; };
 		5B3D49CD1F264750007BEC26 /* PalitraStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3D49CC1F264750007BEC26 /* PalitraStyleKit.swift */; };
 		5B506A561F261EBF00159E7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B506A551F261EBF00159E7E /* AppDelegate.swift */; };
 		5B506A581F261EBF00159E7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B506A571F261EBF00159E7E /* ViewController.swift */; };
@@ -82,6 +84,8 @@
 		5B2F25481F29063400EAC09C /* PalitraSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalitraSectionHeader.swift; sourceTree = "<group>"; };
 		5B2F254A1F293F4500EAC09C /* DynamicColorMacOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DynamicColorMacOS.framework; path = Carthage/Build/Mac/DynamicColorMacOS.framework; sourceTree = "<group>"; };
 		5B2F254F1F293FAB00EAC09C /* DynamicColorMacOS.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = DynamicColorMacOS.framework.dSYM; path = Carthage/Build/Mac/DynamicColorMacOS.framework.dSYM; sourceTree = "<group>"; };
+		5B2F25511F294EC300EAC09C /* ColorNamer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorNamer.swift; sourceTree = "<group>"; };
+		5B2F25531F294FDD00EAC09C /* ColorNamer.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = ColorNamer.js; sourceTree = "<group>"; };
 		5B3D49CC1F264750007BEC26 /* PalitraStyleKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalitraStyleKit.swift; sourceTree = "<group>"; };
 		5B506A521F261EBF00159E7E /* Palitra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palitra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B506A551F261EBF00159E7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -182,6 +186,8 @@
 				5B506A621F261EBF00159E7E /* Palitra.entitlements */,
 				5B506A591F261EBF00159E7E /* Palitra.xcdatamodeld */,
 				5B2F25481F29063400EAC09C /* PalitraSectionHeader.swift */,
+				5B2F25511F294EC300EAC09C /* ColorNamer.swift */,
+				5B2F25531F294FDD00EAC09C /* ColorNamer.js */,
 			);
 			path = Palitra;
 			sourceTree = "<group>";
@@ -322,6 +328,7 @@
 			files = (
 				5B506A5D1F261EBF00159E7E /* Assets.xcassets in Resources */,
 				5BCBBC701F27D98A005FA487 /* PalitraSegmentedControl.xib in Resources */,
+				5B2F25541F294FDD00EAC09C /* ColorNamer.js in Resources */,
 				5BEDC7011F266686003C7A18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +367,7 @@
 				5BDBFCDC1F27A17700BCA4DE /* PalitraSegmentedControlCell.swift in Sources */,
 				5B2F25411F28F2F400EAC09C /* PickerImage.swift in Sources */,
 				5B2F25491F29063400EAC09C /* PalitraSectionHeader.swift in Sources */,
+				5B2F25521F294EC300EAC09C /* ColorNamer.swift in Sources */,
 				5B506A8D1F26318600159E7E /* PalitraWindow.swift in Sources */,
 				5B506A8F1F26349500159E7E /* PalitraButton.swift in Sources */,
 			);
