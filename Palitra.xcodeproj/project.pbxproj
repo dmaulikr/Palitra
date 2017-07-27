@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B0B3A931F2A850C0054DE80 /* PalitraPalettePreviewSwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B3A921F2A850C0054DE80 /* PalitraPalettePreviewSwatch.swift */; };
+		5B0B3A951F2A8D2F0054DE80 /* PalitraPalettePreviewSwatchShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B3A941F2A8D2F0054DE80 /* PalitraPalettePreviewSwatchShapes.swift */; };
 		5B2F25411F28F2F400EAC09C /* PickerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2F253D1F28F2F300EAC09C /* PickerImage.swift */; };
 		5B2F25421F28F2F400EAC09C /* ColorPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2F253E1F28F2F300EAC09C /* ColorPickerController.swift */; };
 		5B2F25431F28F2F400EAC09C /* HuePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2F253F1F28F2F400EAC09C /* HuePicker.swift */; };
@@ -27,6 +29,7 @@
 		5B506A771F261EC000159E7E /* PalitraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B506A761F261EC000159E7E /* PalitraUITests.swift */; };
 		5B506A8D1F26318600159E7E /* PalitraWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B506A8C1F26318600159E7E /* PalitraWindow.swift */; };
 		5B506A8F1F26349500159E7E /* PalitraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B506A8E1F26349500159E7E /* PalitraButton.swift */; };
+		5B68F2181F2A6CF900F0DDC5 /* PalitraWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B68F2171F2A6CF900F0DDC5 /* PalitraWindowController.swift */; };
 		5BCBBC701F27D98A005FA487 /* PalitraSegmentedControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BCBBC6E1F27D98A005FA487 /* PalitraSegmentedControl.xib */; };
 		5BCBBC711F27D98A005FA487 /* PalitraSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCBBC6F1F27D98A005FA487 /* PalitraSegmentedControl.swift */; };
 		5BDBFCDC1F27A17700BCA4DE /* PalitraSegmentedControlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDBFCDB1F27A17700BCA4DE /* PalitraSegmentedControlCell.swift */; };
@@ -76,6 +79,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5B0B3A921F2A850C0054DE80 /* PalitraPalettePreviewSwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalitraPalettePreviewSwatch.swift; sourceTree = "<group>"; };
+		5B0B3A941F2A8D2F0054DE80 /* PalitraPalettePreviewSwatchShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalitraPalettePreviewSwatchShapes.swift; sourceTree = "<group>"; };
 		5B2F253D1F28F2F300EAC09C /* PickerImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerImage.swift; sourceTree = "<group>"; };
 		5B2F253E1F28F2F300EAC09C /* ColorPickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerController.swift; sourceTree = "<group>"; };
 		5B2F253F1F28F2F400EAC09C /* HuePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HuePicker.swift; sourceTree = "<group>"; };
@@ -102,6 +107,7 @@
 		5B506A781F261EC000159E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B506A8C1F26318600159E7E /* PalitraWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalitraWindow.swift; sourceTree = "<group>"; };
 		5B506A8E1F26349500159E7E /* PalitraButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalitraButton.swift; sourceTree = "<group>"; };
+		5B68F2171F2A6CF900F0DDC5 /* PalitraWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalitraWindowController.swift; sourceTree = "<group>"; };
 		5BCBBC6E1F27D98A005FA487 /* PalitraSegmentedControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PalitraSegmentedControl.xib; sourceTree = "<group>"; };
 		5BCBBC6F1F27D98A005FA487 /* PalitraSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalitraSegmentedControl.swift; sourceTree = "<group>"; };
 		5BDBFCDB1F27A17700BCA4DE /* PalitraSegmentedControlCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalitraSegmentedControlCell.swift; sourceTree = "<group>"; };
@@ -175,19 +181,21 @@
 				5B506A551F261EBF00159E7E /* AppDelegate.swift */,
 				5B506A571F261EBF00159E7E /* ViewController.swift */,
 				5B2F25451F28F2FE00EAC09C /* Color Picker */,
+				5BB67F541F2AAD6F007E84B5 /* ColorNamer */,
 				5BDBFCDD1F27D91200BCA4DE /* PalitraSegmentedControl */,
 				5B2F25461F28F50300EAC09C /* NewPaletteViewController.swift */,
+				5B2F25481F29063400EAC09C /* PalitraSectionHeader.swift */,
 				5BEDC7021F2689E3003C7A18 /* PalitraTitlebarControls.swift */,
 				5B506A8C1F26318600159E7E /* PalitraWindow.swift */,
+				5B68F2171F2A6CF900F0DDC5 /* PalitraWindowController.swift */,
 				5B506A8E1F26349500159E7E /* PalitraButton.swift */,
 				5B3D49CC1F264750007BEC26 /* PalitraStyleKit.swift */,
+				5B0B3A921F2A850C0054DE80 /* PalitraPalettePreviewSwatch.swift */,
+				5B0B3A941F2A8D2F0054DE80 /* PalitraPalettePreviewSwatchShapes.swift */,
 				5B506A5C1F261EBF00159E7E /* Assets.xcassets */,
 				5B506A611F261EBF00159E7E /* Info.plist */,
 				5B506A621F261EBF00159E7E /* Palitra.entitlements */,
 				5B506A591F261EBF00159E7E /* Palitra.xcdatamodeld */,
-				5B2F25481F29063400EAC09C /* PalitraSectionHeader.swift */,
-				5B2F25511F294EC300EAC09C /* ColorNamer.swift */,
-				5B2F25531F294FDD00EAC09C /* ColorNamer.js */,
 			);
 			path = Palitra;
 			sourceTree = "<group>";
@@ -208,6 +216,15 @@
 				5B506A781F261EC000159E7E /* Info.plist */,
 			);
 			path = PalitraUITests;
+			sourceTree = "<group>";
+		};
+		5BB67F541F2AAD6F007E84B5 /* ColorNamer */ = {
+			isa = PBXGroup;
+			children = (
+				5B2F25511F294EC300EAC09C /* ColorNamer.swift */,
+				5B2F25531F294FDD00EAC09C /* ColorNamer.js */,
+			);
+			path = ColorNamer;
 			sourceTree = "<group>";
 		};
 		5BDBFCDD1F27D91200BCA4DE /* PalitraSegmentedControl */ = {
@@ -356,17 +373,20 @@
 			files = (
 				5BEDC7031F2689E3003C7A18 /* PalitraTitlebarControls.swift in Sources */,
 				5B2F25471F28F50300EAC09C /* NewPaletteViewController.swift in Sources */,
+				5B68F2181F2A6CF900F0DDC5 /* PalitraWindowController.swift in Sources */,
 				5B2F25441F28F2F400EAC09C /* ColorPicker.swift in Sources */,
 				5B506A5B1F261EBF00159E7E /* Palitra.xcdatamodeld in Sources */,
 				5B506A581F261EBF00159E7E /* ViewController.swift in Sources */,
 				5BCBBC711F27D98A005FA487 /* PalitraSegmentedControl.swift in Sources */,
 				5B2F25421F28F2F400EAC09C /* ColorPickerController.swift in Sources */,
 				5B3D49CD1F264750007BEC26 /* PalitraStyleKit.swift in Sources */,
+				5B0B3A951F2A8D2F0054DE80 /* PalitraPalettePreviewSwatchShapes.swift in Sources */,
 				5B2F25431F28F2F400EAC09C /* HuePicker.swift in Sources */,
 				5B506A561F261EBF00159E7E /* AppDelegate.swift in Sources */,
 				5BDBFCDC1F27A17700BCA4DE /* PalitraSegmentedControlCell.swift in Sources */,
 				5B2F25411F28F2F400EAC09C /* PickerImage.swift in Sources */,
 				5B2F25491F29063400EAC09C /* PalitraSectionHeader.swift in Sources */,
+				5B0B3A931F2A850C0054DE80 /* PalitraPalettePreviewSwatch.swift in Sources */,
 				5B2F25521F294EC300EAC09C /* ColorNamer.swift in Sources */,
 				5B506A8D1F26318600159E7E /* PalitraWindow.swift in Sources */,
 				5B506A8F1F26349500159E7E /* PalitraButton.swift in Sources */,

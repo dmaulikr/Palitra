@@ -11,6 +11,8 @@ import Cocoa
 @IBDesignable class PalitraButton: NSButton {
     
     @IBInspectable var buttonIdentifier: String?
+    @IBInspectable var buttonTitle: String?
+    @IBInspectable var isPrimary: Bool = false
     
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
@@ -26,23 +28,17 @@ import Cocoa
         buttonSetup()
     }
     
-//    override func mouseDown(with event: NSEvent) {
-//        super.mouseDown(with: event)
-//    }
-//
-//    override func mouseUp(with event: NSEvent) {
-//        super.mouseUp(with: event)
-//    }
-    
     func buttonSetup() {
         self.wantsLayer = true
         self.isBordered = false
-//        self.title = ""
         drawButton()
     }
     
     func drawButton() {
-
+        
+        let pstyle = NSMutableParagraphStyle()
+        pstyle.alignment = .center
+        
         if let id = buttonIdentifier {
             switch id {
             case "newPalette":
@@ -54,11 +50,18 @@ import Cocoa
             case "sketchSync":
                 self.image = PalitraStyleKit.imageOfPalitraSketchSyncButton(imageSize: self.frame.size)
                 self.alternateImage = PalitraStyleKit.imageOfPalitraSketchSyncButtonActive(imageSize: self.frame.size)
+            case "labeled":
+                switch isPrimary {
+                case true:
+                    self.image = PalitraStyleKit.imageOfPalitraButtonDark(imageSize: self.frame.size)
+                    self.attributedTitle = NSAttributedString(string: buttonTitle!, attributes: [NSAttributedStringKey.foregroundColor : NSColor.white, NSAttributedStringKey.paragraphStyle : pstyle])
+                case false:
+                    self.image = PalitraStyleKit.imageOfPalitraButton(imageSize: self.frame.size)
+                                        self.attributedTitle = NSAttributedString(string: buttonTitle!, attributes: [NSAttributedStringKey.foregroundColor : NSColor.black, NSAttributedStringKey.paragraphStyle : pstyle])
+                }
             default:
                 Swift.print("Invalid or unset button identifier")
             }
-        } else {
-            self.image = PalitraStyleKit.imageOfPalitraButton(imageSize: self.frame.size)
         }
     } 
 }

@@ -8,7 +8,7 @@
 
 import Cocoa
 
-@IBDesignable class PalitraSectionHeader: NSView {
+class PalitraSectionHeader: NSView {
 
     @IBInspectable var sectionHeaderPosition: String?
     
